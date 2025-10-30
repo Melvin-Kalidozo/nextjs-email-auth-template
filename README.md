@@ -1,3 +1,33 @@
+# Email and password Auth Website
+
+## ⚙️ Technology Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Database:** PostgreSQL (using [Neon DB](https://neon.tech))
+- **ORM:** Prisma
+- **Authentication:** [NextAuth.js](https://next-auth.js.org) (Email and Password verification)
+- **Image Storage:** Cloudinary
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Environment Setup
+
+Make sure you have Node.js (v18+) and PostgreSQL (preferably Neon) ready.
+
+Create a `.env` file in the project root and add the following variables:
+
+````env
+DATABASE_URL="your_neon_postgres_connection_string"
+NEXTAUTH_SECRET="your_random_generated_secret"
+NEXTAUTH_URL="http://localhost:3000"
+CLOUDINARY_CLOUD_NAME="your_cloud_name"
+CLOUDINARY_API_KEY="your_cloudinary_api_key"
+CLOUDINARY_API_SECRET="your_cloudinary_api_secret"
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -12,7 +42,7 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+````
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
